@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PULSE RING</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+    
+    <!-- Game Container -->
+    <div class="game-container">
+        <!-- HUD -->
+        <div class="hud">
+            <div class="score-box">
+                <span class="label">SCORE</span>
+                <span class="value" id="score">0</span>
+            </div>
+            <div class="best-box">
+                <span class="label">BEST</span>
+                <span class="value" id="best">0</span>
+            </div>
+        </div>
+        
+        <!-- Main Game Area -->
+        <div class="game-area">
+            <canvas id="gameCanvas"></canvas>
+            
+            <!-- Center Pulse Effect -->
+            <div class="center-pulse"></div>
+        </div>
+        
+        <!-- Combo Indicator -->
+        <div class="combo-container" id="combo">
+            <span class="combo-number">x1</span>
+            <span class="combo-text">COMBO</span>
+        </div>
+        
+        <!-- Start Screen -->
+        <div class="screen start-screen" id="startScreen">
+            <h1 class="title">PULSE RING</h1>
+            <p class="subtitle">Tap when the pointer hits the zone</p>
+            <button class="btn-primary" id="startBtn">TAP TO START</button>
+        </div>
+        
+        <!-- Game Over Screen -->
+        <div class="screen game-over-screen hidden" id="gameOverScreen">
+            <h2 class="game-over-title">GAME OVER</h2>
+            <div class="final-score">
+                <span class="label">SCORE</span>
+                <span class="value" id="finalScore">0</span>
+            </div>
+            <div class="new-best hidden" id="newBest">NEW BEST!</div>
+            <button class="btn-primary" id="restartBtn">TRY AGAIN</button>
+        </div>
+    </div>
+    
+    <!-- Audio Context (we'll add sound later) -->
+    <script src="game.js"></script>
+</body>
+</html>
