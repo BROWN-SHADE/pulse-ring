@@ -69,18 +69,6 @@ Or open `index.html` in any modern web browser.
 
 ---
 
-## Customization
-
-Want to make it yours? Edit these lines:
-
-| Change | File | Line |
-|--------|------|------|
-| Game title | `index.html` | `<h1 class="title">PULSE RING</h1>` |
-| Colors | `styles.css` | `:root { --neon-cyan: #00f3ff; ... }` |
-| Difficulty | `game.js` | `state.speed = 2;` (higher = faster) |
-| Target size | `game.js` | `targetSize: 60` (degrees, lower = harder) |
-
----
 
 ## Browser Support
 
